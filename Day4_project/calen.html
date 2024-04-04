@@ -7,11 +7,37 @@
   </head>
 
   <body>
-    <div class="box">
-      <div><h1>Calen</h1></div>
-      <div></div>
-        
+    <div class="calendar">
+        <div class="header">
+            <div class="year-month"></div>
+            <div class="nav">
+                <button class="nav-btn go-prev" onclick="prevMonth()">&lt;</button>
+                <button class="nav-btn go-today"onclick="goToday()">Today</button>
+                <button class="nav-btn go-next" onclick="nextMonth()">&gt;</button>
+            </div>
+        </div>
+        <div class="main">
+            <div class="days">
+                <div class="day">일</div>
+                <div class="day">월</div>
+                <div class="day">화</div>
+                <div class="day">수</div>
+                <div class="day">목</div>
+                <div class="day">금</div>
+                <div class="day">토</div>
+            </div>
+            <div class="dates"></div>
+        </div>
+        <div class="box">
+            <div class = "select_rewr_date"></div>
+              <div class="input_box" id="input_put">
+              <input type="text" placeholder="일정을 작성주세요." />
+              <button id="add_but">추가</button>
+              </div>
+              <div id="todoes_box"></div>
+          </div>
     </div>
+    
     <script src="./calen.js"></script>
   </body>
 </html>
