@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./slider.css" />
+    <title>slider_ex</title>
+</head>
+<body>
+    <div style="overflow: hidden;">
+        <div class="container">
+            <div class= "inner">
+                <img src="">
+            </div>
+        </div>
+    </div>
+    <button class="left_img">&lt;</button>
+    <button class="but1">1</button>
+    <button class="but2">2</button>
+    <button class="but3">3</button>
+    <button class="right_img">&gt;</button>
+    
+</body>
+<script>
+    document.querySelector('but2').addEventListener('click',function(){
+        document.querySelector('.container').style.transform = 'translate(-100vw)';
+    });
+    document.querySelector('but3').addEventListener('click',function(){
+        document.querySelector('.container').style.transform = 'translate(-200vw)';
+    });
+</script>
+</html>
