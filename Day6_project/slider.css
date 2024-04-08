@@ -1,12 +1,25 @@
+.con_padding {
+    display: flex;
+    justify-content: center;
+}
+.con_box {
+    width: 30%;
+    height: 30%;
+    background-color: antiquewhite;
+    overflow: hidden;
+}
 .container {
     width: 300vw;
     transition: transform 0.5s;
+    display: flex;
+    align-items: center;
 }
 .inner {
     width: 100vw;
-    float: left;
+    /*float: left;*/
 }
 
 .inner img {
-    width: 100%
+    width: 30%;
+    height: 30%;
 }
