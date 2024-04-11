@@ -1,0 +1,57 @@
+*{margin:0; padding:0;}
+
+#wrap{
+    display:flex;
+    flex-flow: row wrap;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.header{
+    position: relative;
+    padding:18px 5%;
+}
+
+.header .gnb{
+    display: none;
+    position: absolute;
+    top:100%;
+    left: 0;   
+    width: 100%;
+    background-color: antiquewhite;
+}
+
+.header .gnb li{
+    border-bottom: 1px solid #aaaaaa;
+}
+
+.header .gnb li a{
+    display: block;
+    padding: 14px 0 14px 5%;
+    font-size: 14px;
+    color: black;
+}
+
+.header .menu_toggle_btn{
+    float:right;
+    width: 20px;
+    margin-top: 4px;
+    cursor: pointer;
+}
+
+.header .menu_toggle_btn span{
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #aaaaaa;
+}
+
+.header .menu_toggle_btn span:nth-child(2){
+    margin: 5px 0;
+}
+
+.header nav{
+    width: 87.5%;
+    min-height: 80px;  
+    background-color: aquamarine;
+}
